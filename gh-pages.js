@@ -10,5 +10,8 @@ publish(
       email: 'schicksw@protonmail.com'
     },
     dotfiles: true
+  }, 
+  () => {
+    console.log("deployed")
   }
 )
