@@ -1,4 +1,6 @@
-import type { P5 } from 'src/types/p5';
+<script lang="ts">
+  import Processing from '../../components/Processing.svelte'
+  import type { P5 } from 'src/types/p5';
 
 function sketch (p5: P5): void {
 
@@ -55,5 +57,6 @@ function sketch (p5: P5): void {
 
 	function initializeFields() {}
 };
+</script>
 
-export default sketch;
+<Processing {sketch} title="sunflower"/>
